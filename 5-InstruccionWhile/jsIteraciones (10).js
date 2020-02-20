@@ -6,9 +6,11 @@ function mostrar()
 	
 	var respuesta="si";
 
-	while(respuesta!="no")
+	while(contador<10)
 	{
-		
+
+		console.log(contador);
+		contador=contador+1;
 	
 	}
 
