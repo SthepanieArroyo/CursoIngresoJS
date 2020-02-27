@@ -1,74 +1,42 @@
 function mostrar()
 {
-
 	var hora; 
 	hora=document.getElementById('laHora').value;
 	hora=parseInt(hora);
-
 	
 
-	switch(hora)
-	{
-		case 1:
-		if(hora>5 || hora<12)
+	if(isNaN(hora))
+	{ 
+		alert("hora no valida");
+	}
+
+	else{
+
+		switch(true)
 		{
+			case hora>5 && hora < 12:
 			alert("es de mañana");
-        }
+			break;
 
-
-		break;
-
-		case 2:
-
-		if(hora>11 || hora<20)
-		{
+			case hora>11 && hora<20:
 			alert("es de tarde");
+			break;
+
+			default:
+
+			if(hora<24)
+			{
+				alert("es de noche, a dormir");
+			}
+
+			break;
+
+
+
 		}
-		break;
-
-		case 3: 
-
-		if(hora>19 ||hora<25)
-		{
-			alert("Es de noche. A dormir!");
-		}
-		break;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	}
-
-
-
-
-
-
-
-
-
 
 
 
