@@ -40,7 +40,7 @@ function mostrar()
 			sexoAlumno=prompt("Ingrese f o m");
 		}
 
-		while (notaAlumno>=6 && sexoAlumno == "m")
+		if (notaAlumno>5 && sexoAlumno == "m")
 		{
 			contadorVarones++;
 		}
@@ -62,7 +62,7 @@ function mostrar()
 			if(notaAlumno<notaMasBaja)
 			{
 				notaMasBaja=notaAlumno;
-				sexoAlumno=sexoNotaMasBaja;
+				sexoNotaMasBaja=sexoAlumno;
 
 			}
 
