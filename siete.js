@@ -22,7 +22,8 @@ function mostrar()
 	{
 
 		respuesta=prompt("si para seguir");
-		contador=contador+1; 
+		contador=contador+1;
+		 
 		
 
 		notaAlumno=prompt("ingrese la"+contador+"º nota :");
